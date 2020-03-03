@@ -8,7 +8,33 @@
 </head>
 <body>
   <main class="main">
-    <img class="badges" src="./assets/images/front-end.png" alt="HTML5, CSS3 and JavaScript badges">
+
+    <ul id=cat-list></ul>
+    <div id="cat" >
+      <h2 id="cat-name"></h2>
+      <div id="cat-count"></div>
+      <img src="" alt="" id="cat-img" class="cat-area">
+    </div>
+
+    <button class="btn-admin" id="btn-admin">Admin</button>
+
+    <form class="update-cat" id="cat-edit">
+      <label for="newCatName">Name</label>
+      <input type="text" name="newCatName" id="newCatName">
+    
+    
+      <label for="newCatUrl">Image URL</label>
+      <input type="text" name="newCatImg" id="newCatUrl">
+
+      
+      <label for="newCatClicks">Cat Clicks</label>
+      <input type="text" name="newCatClicks" id="newCatClicks">
+
+      <input type="submit" value="cancel"/>
+      <input type="submit" id="saveCatEdit" value="Save"/>
+    </form>
+
+
   </main>
   <script src="./index.js"></script>
 </body>
